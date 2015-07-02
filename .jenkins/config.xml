@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors/>
+  <version>1.593</version>
+  <numExecutors>4</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="com.michelin.cio.hudson.plugins.rolestrategy.RoleBasedAuthorizationStrategy">
+    <roleMap type="globalRoles">
+      <role name="admin" pattern=".*">
+        <permissions>
+          <permission>hudson.model.Computer.Connect</permission>
+          <permission>hudson.model.Item.Workspace</permission>
+          <permission>hudson.scm.SCM.Tag</permission>
+          <permission>hudson.model.View.Read</permission>
+          <permission>hudson.model.Computer.Create</permission>
+          <permission>hudson.model.Hudson.ConfigureUpdateCenter</permission>
+          <permission>hudson.model.Computer.Delete</permission>
+          <permission>hudson.model.Run.Update</permission>
+          <permission>hudson.model.Hudson.Administer</permission>
+          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View</permission>
+          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update</permission>
+          <permission>hudson.model.Run.Delete</permission>
+          <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.model.View.Delete</permission>
+          <permission>hudson.model.Computer.Build</permission>
+          <permission>hudson.model.Item.Delete</permission>
+          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains</permission>
+          <permission>hudson.model.Computer.Disconnect</permission>
+          <permission>hudson.model.Computer.Configure</permission>
+          <permission>hudson.model.Hudson.RunScripts</permission>
+          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create</permission>
+          <permission>hudson.model.Hudson.Read</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete</permission>
+          <permission>hudson.model.Item.Discover</permission>
+          <permission>hudson.model.Item.Configure</permission>
+          <permission>hudson.model.Hudson.UploadPlugins</permission>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>hudson.model.View.Create</permission>
+          <permission>hudson.model.View.Configure</permission>
+          <permission>hudson.model.Item.Create</permission>
+        </permissions>
+        <assignedSIDs>
+          <sid>admin</sid>
+        </assignedSIDs>
+      </role>
+      <role name="anonymous" pattern=".*">
+        <permissions>
+          <permission>hudson.model.Hudson.Read</permission>
+          <permission>hudson.model.View.Read</permission>
+        </permissions>
+        <assignedSIDs>
+          <sid>anonymous</sid>
+        </assignedSIDs>
+      </role>
+      <role name="project" pattern=".*">
+        <permissions>
+          <permission>hudson.model.Hudson.Read</permission>
+          <permission>hudson.model.View.Read</permission>
+        </permissions>
+        <assignedSIDs>
+          <sid>wanglidong</sid>
+          <sid>kefu3</sid>
+          <sid>huangjingbin</sid>
+          <sid>gangzhigang</sid>
+          <sid>chuanwei</sid>
+          <sid>wumingquan</sid>
+          <sid>czql</sid>
+          <sid>dongyi</sid>
+          <sid>yuting</sid>
+          <sid>motudabao</sid>
+          <sid>peichi</sid>
+          <sid>cs</sid>
+          <sid>xujingfeng</sid>
+          <sid>boo</sid>
+          <sid>chunping</sid>
+          <sid>chenyitang</sid>
+          <sid>lvxiaohui</sid>
+          <sid>lianghui</sid>
+          <sid>leijiusheng</sid>
+          <sid>zbq</sid>
+          <sid>xukunbin</sid>
+        </assignedSIDs>
+      </role>
+      <role name="projectAll" pattern=".*">
+        <permissions>
+          <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>hudson.model.Item.Cancel</permission>
+        </permissions>
+        <assignedSIDs/>
+      </role>
+    </roleMap>
+    <roleMap type="slaveRoles"/>
+    <roleMap type="projectRoles">
+      <role name="battlegirl" pattern="battlegirl">
+        <permissions>
+          <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View</permission>
+        </permissions>
+        <assignedSIDs>
+          <sid>kefu3</sid>
+          <sid>chuanwei</sid>
+          <sid>lianghui</sid>
+          <sid>dongyi</sid>
+          <sid>motudabao</sid>
+        </assignedSIDs>
+      </role>
+      <role name="battlegirl_hw" pattern="battlegirl_hw">
+        <permissions>
+          <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View</permission>
+        </permissions>
+        <assignedSIDs/>
+      </role>
+      <role name="battlegirl_outside" pattern="battlegirl_outside">
+        <permissions>
+          <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View</permission>
+        </permissions>
+        <assignedSIDs>
+          <sid>linekong_dgr</sid>
+          <sid>wumingquan</sid>
+        </assignedSIDs>
+      </role>
+      <role name="battlegirl_test" pattern="battlegirl_test">
+        <permissions>
+          <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View</permission>
+        </permissions>
+        <assignedSIDs>
+          <sid>wanglidong</sid>
+          <sid>kefu3</sid>
+          <sid>xuziwu</sid>
+          <sid>huangjingbin</sid>
+          <sid>gangzhigang</sid>
+          <sid>chuanwei</sid>
+          <sid>wumingquan</sid>
+          <sid>czql</sid>
+          <sid>dongyi</sid>
+          <sid>yuting</sid>
+          <sid>motudabao</sid>
+          <sid>hanqun</sid>
+          <sid>peichi</sid>
+          <sid>cs</sid>
+          <sid>linekong_dgr</sid>
+          <sid>xujingfeng</sid>
+          <sid>boo</sid>
+          <sid>chunping</sid>
+          <sid>chenyitang</sid>
+          <sid>lvxiaohui</sid>
+          <sid>lianghui</sid>
+          <sid>leijiusheng</sid>
+          <sid>zbq</sid>
+          <sid>xukunbin</sid>
+        </assignedSIDs>
+      </role>
+      <role name="dgr_update" pattern="dgr_update">
+        <permissions>
+          <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View</permission>
+        </permissions>
+        <assignedSIDs>
+          <sid>xujingfeng</sid>
+          <sid>chuanwei</sid>
+          <sid>chenyitang</sid>
+          <sid>lianghui</sid>
+          <sid>dongyi</sid>
+          <sid>leijiusheng</sid>
+          <sid>zbq</sid>
+          <sid>motudabao</sid>
+          <sid>hanqun</sid>
+        </assignedSIDs>
+      </role>
+      <role name="luandoutang" pattern="luandoutang">
+        <permissions>
+          <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View</permission>
+        </permissions>
+        <assignedSIDs>
+          <sid>kefu3</sid>
+          <sid>xujingfeng</sid>
+          <sid>xuziwu</sid>
+          <sid>lianghui</sid>
+          <sid>dongyi</sid>
+          <sid>motudabao</sid>
+        </assignedSIDs>
+      </role>
+      <role name="xfight3" pattern="xfight3">
+        <permissions>
+          <permission>hudson.model.Item.Build</permission>
+          <permission>hudson.model.Item.Read</permission>
+          <permission>hudson.model.Item.Cancel</permission>
+          <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View</permission>
+        </permissions>
+        <assignedSIDs>
+          <sid>kefu3</sid>
+          <sid>xujingfeng</sid>
+          <sid>boo</sid>
+          <sid>chuanwei</sid>
+          <sid>chenyitang</sid>
+          <sid>lianghui</sid>
+          <sid>dongyi</sid>
+          <sid>zbq</sid>
+          <sid>yuting</sid>
+          <sid>cs</sid>
+        </assignedSIDs>
+      </role>
+    </roleMap>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>false</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>/Users/fuwuqi/workspace/${ITEM_FULLNAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks/>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <slaves/>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>All</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>All</primaryView>
+  <slaveAgentPort>0</slaveAgentPort>
+  <label></label>
+  <nodeProperties/>
+  <globalNodeProperties>
+    <hudson.slaves.EnvironmentVariablesNodeProperty>
+      <envVars serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          </default>
+          <int>1</int>
+          <string>LANG</string>
+          <string>zh_CN.UTF-8</string>
+        </tree-map>
+      </envVars>
+    </hudson.slaves.EnvironmentVariablesNodeProperty>
+  </globalNodeProperties>
+</hudson>

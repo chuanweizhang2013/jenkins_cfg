@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: anthony
+Build-Jdk: 1.7.0_25
+Extension-Name: post-completed-build-result
+Implementation-Title: post-completed-build-result
+Implementation-Version: 1.1
+Plugin-Class: org.terracotta.jenkins.plugins.postcompleted.PostComplet
+ edPlugin
+Group-Id: org.terracotta.jenkins.plugins
+Short-Name: post-completed-build-result
+Long-Name: post-completed-build-result
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Post+Completed+Build+
+ Result+Plugin
+Plugin-Version: 1.1
+Hudson-Version: 1.538
+Jenkins-Version: 1.538
+Plugin-Developers: Anthony Dahanne:anthonydahanne:anthony.dahanne@gmai
+ l.com
+

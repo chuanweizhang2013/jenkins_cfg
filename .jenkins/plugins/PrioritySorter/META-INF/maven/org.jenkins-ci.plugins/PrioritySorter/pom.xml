@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.jenkins-ci.plugins</groupId>
+		<artifactId>plugin</artifactId>
+		<version>1.520</version>
+	</parent>
+	<artifactId>PrioritySorter</artifactId>
+	<version>2.9</version>
+	<packaging>hpi</packaging>
+	<name>Jenkins Priority Sorter Plugin</name>
+	<description>This plugin allows for the build queue to be sorted based on configurable Sorting and Priority Assigment Strategies.</description>
+	<url>https://wiki.jenkins-ci.org/display/JENKINS/Priority+Sorter+Plugin</url>
+
+	<licenses>
+		<license>
+			<name>MIT</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<comments>
+				Copyright 2013- Magnus Sandberg. All rights reserved.
+				Copyright 2010- Brad Larson. All rights reserved.
+			</comments>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>emsa23</id>
+			<name>Magnus Sandberg</name>
+			<email>emsa@switchbeat.com</email>
+			<roles>
+				<role>developer</role>
+				<role>maintainer</role>
+			</roles>
+			<timezone>CET</timezone>
+		</developer>
+		<!-- Removed not to show on Wiki 
+		<developer>
+			<id>bklarson</id>
+			<name>Brad Larson</name>
+			<email>bklarson@gmail.com</email>
+			<roles>
+				<role>developer</role>
+				<role>retired maintainer</role>
+			</roles>
+			<timezone>-6</timezone>
+		</developer>
+		 -->
+	</developers>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.jenkins-ci.plugins</groupId>
+			<artifactId>sectioned-view</artifactId>
+			<version>1.18</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jenkins-ci.tools</groupId>
+				<artifactId>maven-hpi-plugin</artifactId>
+				<version>1.96</version>
+				<extensions>true</extensions>
+			</plugin>
+			<!-- http://stackoverflow.com/questions/15166781/mvn-releaseprepare-not-committing-changes-to-pom-xml -->
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.4.2</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.scm</groupId>
+						<artifactId>maven-scm-provider-gitexe</artifactId>
+						<version>1.8.1</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<scm>               
+		<connection>scm:git:git://github.com/jenkinsci/priority-sorter-plugin.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/jenkinsci/priority-sorter-plugin.git</developerConnection>
+		<url>https://github.com/jenkinsci/priority-sorter-plugin</url>
+	  <tag>PrioritySorter-2.9</tag>
+  </scm>
+
+</project>

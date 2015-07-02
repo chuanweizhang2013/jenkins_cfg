@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: wolfs
+Build-Jdk: 1.6.0_26
+Extension-Name: all-changes
+Specification-Title: Shows more changes on the project page
+Implementation-Title: all-changes
+Implementation-Version: 1.3
+Group-Id: org.jenkins-ci.plugins
+Short-Name: all-changes
+Long-Name: All changes plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/All+Changes+Plugin
+Plugin-Version: 1.3
+Hudson-Version: 1.417
+Jenkins-Version: 1.417
+Plugin-Dependencies: token-macro:1.4;resolution:=optional,parameterize
+ d-trigger:2.10;resolution:=optional,email-ext:2.14;resolution:=option
+ al,maven-plugin:1.417,git:1.1.11;resolution:=optional,subversion:1.31
+ ;resolution:=optional
+Plugin-Developers: Stefan Wolf:wolfs:
+

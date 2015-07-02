@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: matt
+Build-Jdk: 1.7.0_55
+Extension-Name: multi-branch-project-plugin
+Specification-Title: This plugin adds an additional project type that 
+ creates sub-projects
+ 		for each branch using a shared configuration.
+Implementation-Title: multi-branch-project-plugin
+Implementation-Version: 0.1.3
+Group-Id: com.github.mjdetullio.jenkins.plugins
+Short-Name: multi-branch-project-plugin
+Long-Name: Multi-Branch Project Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Multi-Branch+Project+
+ Plugin
+Plugin-Version: 0.1.3
+Hudson-Version: 1.532.3
+Jenkins-Version: 1.532.3
+Plugin-Dependencies: scm-api:0.2
+Plugin-Developers: Matthew DeTullio:mjdetullio:mjdetullio@gmail.com
+
